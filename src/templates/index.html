@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Niji Mindmaps — {{ today_topic }}{% endblock %}
+{% block content %}
+<div class="hero">
+<h1>Niji Mindmaps</h1>
+<p class="jp-subtitle">脳地図</p>
+<p>Mapas mentales visuales para aprender japonés — un tema nuevo cada día</p>
+<div class="stats" style="margin-top:2rem;">
+<div class="stat"><div class="stat-value">{{ total_maps }}</div><div class="stat-label">Mapas</div></div>
+<div class="stat"><div class="stat-value">{{ total_days }}</div><div class="stat-label">Días</div></div>
+<div class="stat"><div class="stat-value">{{ categories|length }}</div><div class="stat-label">Categorías</div></div>
+</div>
+</div>
+
+{% if today_map %}
+<div class="mindmap-container animate-in">
+<div class="mm-title">{{ today_map.title }}</div>
+<div class="mm-date">{{ today_map.date }}</div>
+<span class="cat-badge cat-{{ today_map.category }}">{{ today_map.category }}</span>
+{% if today_map.tags %}<div style="margin-top:0.5rem;">{% for t in today_map.tags %}<span class="tag">{{ t }}</span> {% endfor %}</div>{% endif %}
+<div style="margin-top:1.25rem;">
+<img src="{{ root_path }}mindmaps/{{ today_map.svg_path }}" alt="{{ today_map.title }}" style="max-width:100%;border-radius:8px;">
+</div>
+</div>
+{% else %}
+<div class="mindmap-container">
+<p style="padding:2rem;text-align:center;color:var(--text-muted);">No hay mapa para hoy. Corre <code>python src/main.py --daily</code> para generar.</p>
+</div>
+{% endif %}
+
+{% if recent_maps %}
+<h2 style="margin-top:2rem;">Mapas recientes</h2>
+<div class="card-grid">
+{% for m in recent_maps %}
+<a href="{{ root_path }}mindmap/{{ m.id }}.html" class="glass-card" style="text-decoration:none;">
+<h3>{{ m.title }}</h3>
+<div class="meta">{{ m.date }} · <span class="cat-badge cat-{{ m.category }}">{{ m.category }}</span></div>
+</a>
+{% endfor %}
+</div>
+{% endif %}
+
+{% if calendar %}
+<h2 style="margin-top:2rem;">Calendario</h2>
+<div class="archive-grid">
+{% for c in calendar %}
+<a href="{{ root_path }}mindmap/{{ c.id }}.html" class="archive-card" style="opacity:{{ '1' if c.has_map else '0.3' }}">
+<div class="month-name">{{ c.date }}</div>
+<div class="month-count">{{ c.title }}</div>
+</a>
+{% endfor %}
+</div>
+{% endif %}
+{% endblock %}

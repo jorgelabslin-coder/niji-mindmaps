@@ -1,0 +1,199 @@
+topics:
+  - id: particles-wa
+    label: "Partícula は (wa)"
+    description: "Marca el tema de la oración"
+    structure: "Sustantivo + は + ..."
+    usage: "Indica de qué se está hablando"
+    examples:
+      - japanese: "私は学生です"
+        reading: "わたしはがくせいです"
+        meaning: "Yo soy estudiante"
+      - japanese: "今日は暑いです"
+        reading: "きょうはあついです"
+        meaning: "Hoy hace calor"
+    notes: "Aunque se escribe 'ha' (は), se pronuncia 'wa' como partícula"
+
+  - id: particles-ga
+    label: "Partícula が (ga)"
+    description: "Marca el sujeto gramatical"
+    structure: "Sustantivo + が + ..."
+    usage: "Enfatiza el sujeto o con verbos de estado"
+    examples:
+      - japanese: "猫が好きです"
+        reading: "ねこがすきです"
+        meaning: "Me gustan los gatos"
+      - japanese: "雨が降っています"
+        reading: "あめがふっています"
+        meaning: "Está lloviendo"
+    notes: "Diferencia clave: は introduce el tema, が marca el sujeto"
+
+  - id: particles-o
+    label: "Partícula を (o)"
+    description: "Marca el objeto directo"
+    structure: "Sustantivo + を + Verbo transitivo"
+    usage: "Indica sobre qué recae la acción del verbo"
+    examples:
+      - japanese: "寿司を食べます"
+        reading: "すしをたべます"
+        meaning: "Como sushi"
+      - japanese: "本を読む"
+        reading: "ほんをよむ"
+        meaning: "Leer un libro"
+    notes: "Se pronuncia 'o', no 'wo'"
+
+  - id: particles-ni
+    label: "Partícula に (ni)"
+    description: "Dirección, tiempo, objetivo"
+    structure: "Sustantivo + に + Verbo"
+    usage: "Indica destino (a), tiempo puntual (en/a las), o propósito"
+    examples:
+      - japanese: "学校に行く"
+        reading: "がっこうにいく"
+        meaning: "Ir a la escuela"
+      - japanese: "7時に起きる"
+        reading: "しちじにおきる"
+        meaning: "Despertarse a las 7"
+    notes: "Para dirección se usa con verbos de movimiento (行く, 来る, 帰る)"
+
+  - id: particles-de
+    label: "Partícula で (de)"
+    description: "Lugar de acción, medio, instrumento"
+    structure: "Sustantivo + で + Verbo"
+    usage: "Indica dónde ocurre algo, con qué medio o herramienta"
+    examples:
+      - japanese: "教室で勉強する"
+        reading: "きょうしつでべんきょうする"
+        meaning: "Estudiar en el salón"
+      - japanese: "電車で行く"
+        reading: "でんしゃでいく"
+        meaning: "Ir en tren"
+    notes: "NO se usa para indicar destino (ese es に)"
+
+  - id: particles-e
+    label: "Partícula へ (e)"
+    description: "Dirección general"
+    structure: "Sustantivo + へ + Verbo de movimiento"
+    usage: "Indica dirección hacia un lugar (más abstracto que に)"
+    examples:
+      - japanese: "日本へ行きたい"
+        reading: "にほんへいきたい"
+        meaning: "Quiero ir a Japón"
+      - japanese: "東京へ出張する"
+        reading: "とうきょうへしゅっちょうする"
+        meaning: "Ir de viaje de negocios a Tokio"
+    notes: "Se escribe 'he' (へ) pero se pronuncia 'e'. Es más suave/abstracto que に"
+
+  - id: particles-to
+    label: "Partícula と (to)"
+    description: "Y, con (compañía)"
+    structure: "Sustantivo + と + Sustantivo / Persona + と + Verbo"
+    usage: "Conecta sustantivos (y) o indica compañía (con)"
+    examples:
+      - japanese: "友達と映画を見る"
+        reading: "ともだちとえいがをみる"
+        meaning: "Ver una película con un amigo"
+      - japanese: "犬と猫がいる"
+        reading: "いぬとねこがいる"
+        meaning: "Hay un perro y un gato"
+    notes: "Para 'y' en listas completas. Para listas parciales se usa や"
+
+  - id: particles-no
+    label: "Partícula の (no)"
+    description: "Posesivo / Modificador"
+    structure: "Sustantivo + の + Sustantivo"
+    usage: "Indica posesión, pertenencia o modificación entre sustantivos"
+    examples:
+      - japanese: "私の本"
+        reading: "わたしのほん"
+        meaning: "Mi libro"
+      - japanese: "日本の文化"
+        reading: "にほんのぶんか"
+        meaning: "La cultura japonesa"
+    notes: "Funciona como el apóstrofe + s en inglés ('s), pero es más amplio"
+
+  - id: particles-mo
+    label: "Partícula も (mo)"
+    description: "También / Ni"
+    structure: "Sustantivo + も + ..."
+    usage: "Reemplaza a は, が, を para decir 'también' o 'ni'"
+    examples:
+      - japanese: "私も学生です"
+        reading: "わたしもがくせいです"
+        meaning: "Yo también soy estudiante"
+      - japanese: "猫も犬も好き"
+        reading: "ねこもいぬもすき"
+        meaning: "Me gustan tanto gatos como perros"
+    notes: "Con negación significa 'tampoco': 私も行かない (yo tampoco voy)"
+
+  - id: desu-masu
+    label: "Forma cortés (です・ます)"
+    description: "Base del habla formal japonesa"
+    structure: "Sustantivo/Adjetivo-na + です / Verbo + ます"
+    usage: "Se usa con personas que no son de confianza, en el trabajo, o en público"
+    examples:
+      - japanese: "これは本です"
+        reading: "これはほんです"
+        meaning: "Esto es un libro"
+      - japanese: "毎日勉強します"
+        reading: "まいにちべんきょうします"
+        meaning: "Estudio todos los días"
+    notes: "Es la forma más segura de hablar. La forma llana (だ) solo entre amigos"
+
+  - id: verb-groups
+    label: "Grupos Verbales"
+    description: "Clasificación de verbos japoneses"
+    structure: "Godan (Grupo 1) / Ichidan (Grupo 2) / Irregulares (Grupo 3)"
+    usage: "Determina cómo se conjugan los verbos"
+    examples:
+      - japanese: "書く (かく) - Godan"
+        reading: "かきます, かかない, かいて"
+        meaning: "Escribir — verbo godan"
+      - japanese: "食べる (たべる) - Ichidan"
+        reading: "たべます, たべない, たべて"
+        meaning: "Comer — verbo ichidan"
+      - japanese: "する / 来る (くる) - Irregular"
+        reading: "します, こない"
+        meaning: "Hacer / Venir — irregulares"
+    notes: "Regla: si termina en -eru/-iru → ichidan (salvo excepciones como 切る, 帰る)"
+
+  - id: te-form
+    label: "Forma て (Te-form)"
+    description: "Base para conexiones y peticiones"
+    structure: "Verbo (te-form) + ください / いる / もいいです"
+    usage: "Peticiones, acciones en curso, permisos, conexión de frases"
+    examples:
+      - japanese: "待ってください"
+        reading: "まってください"
+        meaning: "Por favor, espere"
+      - japanese: "本を読んでいる"
+        reading: "ほんをよんでいる"
+        meaning: "Estoy leyendo un libro"
+    notes: "La conjugación varía según el grupo: godan tiene 5 reglas (いて, んで, って, etc.)"
+
+  - id: ta-form
+    label: "Forma た (Ta-form / Pasado)"
+    description: "Forma de pasado en japonés"
+    structure: "Verbo (ta-form) + ことがある / ほうがいい"
+    usage: "Pasado, experiencias, recomendaciones"
+    examples:
+      - japanese: "日本に行ったことがある"
+        reading: "にほんにいったことがある"
+        meaning: "He estado en Japón"
+      - japanese: "行ったほうがいい"
+        reading: "いったほうがいい"
+        meaning: "Sería mejor que fueras"
+    notes: "Sigue las mismas reglas de conjugación que la te-form pero cambiando て→た, で→だ"
+
+  - id: adjectives
+    label: "Adjetivos (い vs な)"
+    description: "Dos tipos de adjetivos en japonés"
+    structure: "Adjetivo-い + Sustantivo / Adjetivo-な + な + Sustantivo"
+    usage: "Los adjetivos-い terminan en い y se conjugan. Los adjetivos-な necesitan な"
+    examples:
+      - japanese: "高い山 (たかいやま)"
+        reading: "たかいやま"
+        meaning: "Montaña alta (adjetivo-い)"
+      - japanese: "静かな部屋 (しずかなへや)"
+        reading: "しずかなへや"
+        meaning: "Habitación tranquila (adjetivo-な)"
+    notes: "Los adjetivos-い se conjugan como verbos: 高くない, 高かった. Los な no: 静かじゃない, 静かだった"

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Niji Mindmaps{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{ css_path }}style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🍜</text></svg>">
+</head>
+<body>
+<div class="container">
+<div class="nav">
+<a href="{{ root_path }}index.html" class="nav-brand">Niji</a>
+<a href="{{ root_path }}index.html">Hoy</a>
+<a href="{{ root_path }}archive.html">Archivo</a>
+<a href="{{ root_path }}search.html">Buscar</a>
+</div>
+{% block content %}{% endblock %}
+<div class="footer">
+<span class="footer-brand">Niji Mindmaps</span> · Mapas mentales para aprender japonés · <a href="{{ root_path }}index.html">Inicio</a>
+</div>
+</div>
+<script src="{{ css_path }}app.js"></script>
+</body>
+</html>

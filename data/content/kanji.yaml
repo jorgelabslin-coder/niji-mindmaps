@@ -1,0 +1,308 @@
+themes:
+  - id: numbers
+    label: "Números"
+    items:
+      - kanji: "一"
+        reading: "いち / ひと(つ)"
+        meaning: "uno"
+        radical: "一"
+        strokes: 1
+        examples: [{ word: "一つ", reading: "ひとつ", meaning: "una cosa" }, { word: "一番", reading: "いちばん", meaning: "número uno" }]
+      - kanji: "二"
+        reading: "に / ふた(つ)"
+        meaning: "dos"
+        radical: "二"
+        strokes: 2
+        examples: [{ word: "二つ", reading: "ふたつ", meaning: "dos cosas" }, { word: "二月", reading: "にがつ", meaning: "febrero" }]
+      - kanji: "三"
+        reading: "さん / みっ(つ)"
+        meaning: "tres"
+        radical: "一"
+        strokes: 3
+        examples: [{ word: "三つ", reading: "みっつ", meaning: "tres cosas" }, { word: "三角", reading: "さんかく", meaning: "triángulo" }]
+      - kanji: "四"
+        reading: "し/よん / よっ(つ)"
+        meaning: "cuatro"
+        radical: "口"
+        strokes: 5
+        examples: [{ word: "四月", reading: "しがつ", meaning: "abril" }, { word: "四人", reading: "よにん", meaning: "cuatro personas" }]
+      - kanji: "五"
+        reading: "ご / いつ(つ)"
+        meaning: "cinco"
+        radical: "二"
+        strokes: 4
+        examples: [{ word: "五つ", reading: "いつつ", meaning: "cinco cosas" }, { word: "五月", reading: "ごがつ", meaning: "mayo" }]
+      - kanji: "六"
+        reading: "ろく / むっ(つ)"
+        meaning: "seis"
+        radical: "八"
+        strokes: 4
+        examples: [{ word: "六つ", reading: "むっつ", meaning: "seis cosas" }, { word: "六月", reading: "ろくがつ", meaning: "junio" }]
+      - kanji: "七"
+        reading: "しち/なな / なな(つ)"
+        meaning: "siete"
+        radical: "一"
+        strokes: 2
+        examples: [{ word: "七月", reading: "しちがつ", meaning: "julio" }, { word: "七つ", reading: "ななつ", meaning: "siete cosas" }]
+      - kanji: "八"
+        reading: "はち / やっ(つ)"
+        meaning: "ocho"
+        radical: "八"
+        strokes: 2
+        examples: [{ word: "八つ", reading: "やっつ", meaning: "ocho cosas" }, { word: "八月", reading: "はちがつ", meaning: "agosto" }]
+      - kanji: "九"
+        reading: "く/きゅう / ここの(つ)"
+        meaning: "nueve"
+        radical: "乙"
+        strokes: 2
+        examples: [{ word: "九つ", reading: "ここのつ", meaning: "nueve cosas" }, { word: "九月", reading: "くがつ", meaning: "septiembre" }]
+      - kanji: "十"
+        reading: "じゅう / とお"
+        meaning: "diez"
+        radical: "十"
+        strokes: 2
+        examples: [{ word: "十月", reading: "じゅうがつ", meaning: "octubre" }, { word: "十分", reading: "じゅうぶん", meaning: "suficiente" }]
+
+  - id: nature
+    label: "Naturaleza"
+    items:
+      - kanji: "日"
+        reading: "にち/じつ / ひ/か"
+        meaning: "sol, día"
+        radical: "日"
+        strokes: 4
+        examples: [{ word: "毎日", reading: "まいにち", meaning: "todos los días" }, { word: "日曜日", reading: "にちようび", meaning: "domingo" }]
+      - kanji: "月"
+        reading: "げつ/がつ / つき"
+        meaning: "luna, mes"
+        radical: "月"
+        strokes: 4
+        examples: [{ word: "月曜日", reading: "げつようび", meaning: "lunes" }, { word: "先月", reading: "せんげつ", meaning: "mes pasado" }]
+      - kanji: "火"
+        reading: "か / ひ"
+        meaning: "fuego"
+        radical: "火"
+        strokes: 4
+        examples: [{ word: "火曜日", reading: "かようび", meaning: "martes" }, { word: "火事", reading: "かじ", meaning: "incendio" }]
+      - kanji: "水"
+        reading: "すい / みず"
+        meaning: "agua"
+        radical: "水"
+        strokes: 4
+        examples: [{ word: "水曜日", reading: "すいようび", meaning: "miércoles" }, { word: "水", reading: "みず", meaning: "agua" }]
+      - kanji: "木"
+        reading: "ぼく/もく / き"
+        meaning: "árbol"
+        radical: "木"
+        strokes: 4
+        examples: [{ word: "木曜日", reading: "もくようび", meaning: "jueves" }, { word: "木", reading: "き", meaning: "árbol" }]
+      - kanji: "金"
+        reading: "きん / かね"
+        meaning: "oro, dinero"
+        radical: "金"
+        strokes: 8
+        examples: [{ word: "金曜日", reading: "きんようび", meaning: "viernes" }, { word: "お金", reading: "おかね", meaning: "dinero" }]
+      - kanji: "土"
+        reading: "ど / つち"
+        meaning: "tierra"
+        radical: "土"
+        strokes: 3
+        examples: [{ word: "土曜日", reading: "どようび", meaning: "sábado" }, { word: "土地", reading: "とち", meaning: "terreno" }]
+      - kanji: "山"
+        reading: "さん / やま"
+        meaning: "montaña"
+        radical: "山"
+        strokes: 3
+        examples: [{ word: "山", reading: "やま", meaning: "montaña" }, { word: "富士山", reading: "ふじさん", meaning: "Monte Fuji" }]
+      - kanji: "川"
+        reading: "せん / かわ"
+        meaning: "río"
+        radical: "川"
+        strokes: 3
+        examples: [{ word: "川", reading: "かわ", meaning: "río" }, { word: "小川", reading: "おがわ", meaning: "arroyo" }]
+      - kanji: "花"
+        reading: "か / はな"
+        meaning: "flor"
+        radical: "艸"
+        strokes: 7
+        examples: [{ word: "花", reading: "はな", meaning: "flor" }, { word: "花見", reading: "はなみ", meaning: "ver flores" }]
+
+  - id: people
+    label: "Personas y Cuerpo"
+    items:
+      - kanji: "人"
+        reading: "じん/にん / ひと"
+        meaning: "persona"
+        radical: "人"
+        strokes: 2
+        examples: [{ word: "日本人", reading: "にほんじん", meaning: "japonés" }, { word: "人", reading: "ひと", meaning: "persona" }]
+      - kanji: "女"
+        reading: "じょ / おんな"
+        meaning: "mujer"
+        radical: "女"
+        strokes: 3
+        examples: [{ word: "女の人", reading: "おんなのひと", meaning: "mujer" }, { word: "女子", reading: "じょし", meaning: "chica" }]
+      - kanji: "男"
+        reading: "だん / おとこ"
+        meaning: "hombre"
+        radical: "田"
+        strokes: 7
+        examples: [{ word: "男の人", reading: "おとこのひと", meaning: "hombre" }, { word: "男子", reading: "だんし", meaning: "chico" }]
+      - kanji: "子"
+        reading: "し/す / こ"
+        meaning: "niño"
+        radical: "子"
+        strokes: 3
+        examples: [{ word: "子供", reading: "こども", meaning: "niño" }, { word: "女の子", reading: "おんなのこ", meaning: "niña" }]
+      - kanji: "目"
+        reading: "もく / め"
+        meaning: "ojo"
+        radical: "目"
+        strokes: 5
+        examples: [{ word: "目", reading: "め", meaning: "ojo" }, { word: "目的", reading: "もくてき", meaning: "objetivo" }]
+      - kanji: "耳"
+        reading: "じ / みみ"
+        meaning: "oreja"
+        radical: "耳"
+        strokes: 6
+        examples: [{ word: "耳", reading: "みみ", meaning: "oreja" }, { word: "早耳", reading: "はやみみ", meaning: "chismoso" }]
+      - kanji: "口"
+        reading: "こう/く / くち"
+        meaning: "boca"
+        radical: "口"
+        strokes: 3
+        examples: [{ word: "口", reading: "くち", meaning: "boca" }, { word: "入口", reading: "いりぐち", meaning: "entrada" }]
+      - kanji: "手"
+        reading: "しゅ / て"
+        meaning: "mano"
+        radical: "手"
+        strokes: 4
+        examples: [{ word: "手", reading: "て", meaning: "mano" }, { word: "上手", reading: "じょうず", meaning: "hábil" }]
+      - kanji: "足"
+        reading: "そく / あし"
+        meaning: "pie"
+        radical: "足"
+        strokes: 7
+        examples: [{ word: "足", reading: "あし", meaning: "pie" }, { word: "足りる", reading: "たりる", meaning: "ser suficiente" }]
+      - kanji: "心"
+        reading: "しん / こころ"
+        meaning: "corazón"
+        radical: "心"
+        strokes: 4
+        examples: [{ word: "心", reading: "こころ", meaning: "corazón" }, { word: "安心", reading: "あんしん", meaning: "tranquilidad" }]
+
+  - id: places
+    label: "Lugares y Direcciones"
+    items:
+      - kanji: "上"
+        reading: "じょう / うえ"
+        meaning: "arriba, encima"
+        radical: "一"
+        strokes: 3
+        examples: [{ word: "上", reading: "うえ", meaning: "arriba" }, { word: "上手", reading: "じょうず", meaning: "hábil" }]
+      - kanji: "下"
+        reading: "か/げ / した/もと"
+        meaning: "abajo, debajo"
+        radical: "一"
+        strokes: 3
+        examples: [{ word: "下", reading: "した", meaning: "abajo" }, { word: "地下", reading: "ちか", meaning: "subterráneo" }]
+      - kanji: "中"
+        reading: "ちゅう / なか"
+        meaning: "dentro, medio"
+        radical: "丨"
+        strokes: 4
+        examples: [{ word: "中", reading: "なか", meaning: "dentro" }, { word: "中国", reading: "ちゅうごく", meaning: "China" }]
+      - kanji: "外"
+        reading: "がい/げ / そと"
+        meaning: "fuera"
+        radical: "夕"
+        strokes: 5
+        examples: [{ word: "外", reading: "そと", meaning: "afuera" }, { word: "外国", reading: "がいこく", meaning: "país extranjero" }]
+      - kanji: "前"
+        reading: "ぜん / まえ"
+        meaning: "delante, antes"
+        radical: "刀"
+        strokes: 9
+        examples: [{ word: "前", reading: "まえ", meaning: "delante" }, { word: "名前", reading: "なまえ", meaning: "nombre" }]
+      - kanji: "後"
+        reading: "ご/こう / のち/うしろ"
+        meaning: "después, detrás"
+        radical: "彳"
+        strokes: 9
+        examples: [{ word: "後ろ", reading: "うしろ", meaning: "detrás" }, { word: "午後", reading: "ごご", meaning: "tarde (PM)" }]
+      - kanji: "右"
+        reading: "う/ゆう / みぎ"
+        meaning: "derecha"
+        radical: "口"
+        strokes: 5
+        examples: [{ word: "右", reading: "みぎ", meaning: "derecha" }, { word: "右側", reading: "みぎがわ", meaning: "lado derecho" }]
+      - kanji: "左"
+        reading: "さ / ひだり"
+        meaning: "izquierda"
+        radical: "工"
+        strokes: 5
+        examples: [{ word: "左", reading: "ひだり", meaning: "izquierda" }, { word: "左側", reading: "ひだりがわ", meaning: "lado izquierdo" }]
+      - kanji: "東"
+        reading: "とう / ひがし"
+        meaning: "este"
+        radical: "木"
+        strokes: 8
+        examples: [{ word: "東", reading: "ひがし", meaning: "este" }, { word: "東京", reading: "とうきょう", meaning: "Tokio" }]
+      - kanji: "西"
+        reading: "せい/さい / にし"
+        meaning: "oeste"
+        radical: "西"
+        strokes: 6
+        examples: [{ word: "西", reading: "にし", meaning: "oeste" }, { word: "西洋", reading: "せいよう", meaning: "Occidente" }]
+
+  - id: school
+    label: "Escuela y Conocimiento"
+    items:
+      - kanji: "学"
+        reading: "がく / まな(ぶ)"
+        meaning: "aprender, estudio"
+        radical: "子"
+        strokes: 8
+        examples: [{ word: "学生", reading: "がくせい", meaning: "estudiante" }, { word: "学校", reading: "がっこう", meaning: "escuela" }]
+      - kanji: "校"
+        reading: "こう"
+        meaning: "escuela"
+        radical: "木"
+        strokes: 10
+        examples: [{ word: "学校", reading: "がっこう", meaning: "escuela" }, { word: "校長", reading: "こうちょう", meaning: "director" }]
+      - kanji: "本"
+        reading: "ほん / もと"
+        meaning: "libro, origen"
+        radical: "木"
+        strokes: 5
+        examples: [{ word: "日本", reading: "にほん", meaning: "Japón" }, { word: "本", reading: "ほん", meaning: "libro" }]
+      - kanji: "読"
+        reading: "どく / よ(む)"
+        meaning: "leer"
+        radical: "言"
+        strokes: 14
+        examples: [{ word: "読む", reading: "よむ", meaning: "leer" }, { word: "読書", reading: "どくしょ", meaning: "lectura" }]
+      - kanji: "書"
+        reading: "しょ / か(く)"
+        meaning: "escribir"
+        radical: "曰"
+        strokes: 10
+        examples: [{ word: "書く", reading: "かく", meaning: "escribir" }, { word: "辞書", reading: "じしょ", meaning: "diccionario" }]
+      - kanji: "語"
+        reading: "ご / かた(る)"
+        meaning: "idioma, palabra"
+        radical: "言"
+        strokes: 14
+        examples: [{ word: "日本語", reading: "にほんご", meaning: "japonés" }, { word: "英語", reading: "えいご", meaning: "inglés" }]
+      - kanji: "先"
+        reading: "せん / さき"
+        meaning: "antes, previo"
+        radical: "儿"
+        strokes: 6
+        examples: [{ word: "先生", reading: "せんせい", meaning: "profesor" }, { word: "先週", reading: "せんしゅう", meaning: "semana pasada" }]
+      - kanji: "生"
+        reading: "せい/しょう / い(きる)/う(まれる)"
+        meaning: "vida, nacer"
+        radical: "生"
+        strokes: 5
+        examples: [{ word: "先生", reading: "せんせい", meaning: "profesor" }, { word: "生まれる", reading: "うまれる", meaning: "nacer" }]

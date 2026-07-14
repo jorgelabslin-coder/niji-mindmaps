@@ -1,0 +1,275 @@
+# Rotación diaria de temas para mapas mentales (~90 días de contenido único)
+# El ciclo se repite pero el AI Enhancer genera ejemplos nuevos cada ciclo
+
+rotation:
+  # ── SEMANA 1-2: HIRAGANA ──
+  - day_offset: 0
+    category: hiragana
+    topic_id: a-row
+    title: "Hiragana: Fila A (あいうえお)"
+  - day_offset: 1
+    category: hiragana
+    topic_id: ka-row
+    title: "Hiragana: Fila KA (かきくけこ)"
+  - day_offset: 2
+    category: hiragana
+    topic_id: sa-row
+    title: "Hiragana: Fila SA (さしすせそ)"
+  - day_offset: 3
+    category: hiragana
+    topic_id: ta-row
+    title: "Hiragana: Fila TA (たちつてと)"
+  - day_offset: 4
+    category: hiragana
+    topic_id: na-row
+    title: "Hiragana: Fila NA (なにぬねの)"
+  - day_offset: 5
+    category: hiragana
+    topic_id: ha-row
+    title: "Hiragana: Fila HA (はひふへほ)"
+  - day_offset: 6
+    category: hiragana
+    topic_id: ma-row
+    title: "Hiragana: Fila MA (まみむめも)"
+  - day_offset: 7
+    category: hiragana
+    topic_id: ya-row
+    title: "Hiragana: Filas YA/YO/YO (やゆよ)"
+  - day_offset: 8
+    category: hiragana
+    topic_id: ra-row
+    title: "Hiragana: Fila RA (らりるれろ)"
+  - day_offset: 9
+    category: hiragana
+    topic_id: wa-row
+    title: "Hiragana: Filas WA/WO/N (わをん)"
+
+  # ── SEMANA 3-4: KATAKANA ──
+  - day_offset: 10
+    category: katakana
+    topic_id: a-row
+    title: "Katakana: Fila A (アイウエオ)"
+  - day_offset: 11
+    category: katakana
+    topic_id: ka-row
+    title: "Katakana: Fila KA (カキクケコ)"
+  - day_offset: 12
+    category: katakana
+    topic_id: sa-row
+    title: "Katakana: Fila SA (サシスセソ)"
+  - day_offset: 13
+    category: katakana
+    topic_id: ta-row
+    title: "Katakana: Fila TA (タチツテト)"
+  - day_offset: 14
+    category: katakana
+    topic_id: na-row
+    title: "Katakana: Fila NA (ナニヌネノ)"
+  - day_offset: 15
+    category: katakana
+    topic_id: ha-row
+    title: "Katakana: Fila HA (ハヒフヘホ)"
+  - day_offset: 16
+    category: katakana
+    topic_id: ma-row
+    title: "Katakana: Fila MA (マミムメモ)"
+  - day_offset: 17
+    category: katakana
+    topic_id: ya-row
+    title: "Katakana: Filas YA/YU/YO (ヤユヨ)"
+  - day_offset: 18
+    category: katakana
+    topic_id: ra-row
+    title: "Katakana: Fila RA (ラリルレロ)"
+  - day_offset: 19
+    category: katakana
+    topic_id: wa-row
+    title: "Katakana: Filas WA/WO/N (ワヲン)"
+
+  # ── SEMANA 5-6: KANJI ──
+  - day_offset: 20
+    category: kanji
+    topic_id: numbers
+    title: "Kanji: Números (一〜十)"
+  - day_offset: 21
+    category: kanji
+    topic_id: nature
+    title: "Kanji: Naturaleza (日月火水木金土山川花)"
+  - day_offset: 22
+    category: kanji
+    topic_id: people
+    title: "Kanji: Personas y Cuerpo (人女男子目耳口手足心)"
+  - day_offset: 23
+    category: kanji
+    topic_id: places
+    title: "Kanji: Lugares y Direcciones (上下中外前後左右東西)"
+  - day_offset: 24
+    category: kanji
+    topic_id: school
+    title: "Kanji: Escuela (学校本読書先生)"
+
+  # ── SEMANA 7-10: VOCABULARIO ──
+  - day_offset: 25
+    category: vocabulary
+    topic_id: colors
+    title: "Vocabulario: Colores"
+  - day_offset: 26
+    category: vocabulary
+    topic_id: animals
+    title: "Vocabulario: Animales"
+  - day_offset: 27
+    category: vocabulary
+    topic_id: food
+    title: "Vocabulario: Comida y Bebida"
+  - day_offset: 28
+    category: vocabulary
+    topic_id: family
+    title: "Vocabulario: Familia"
+  - day_offset: 29
+    category: vocabulary
+    topic_id: weather
+    title: "Vocabulario: Clima y Tiempo"
+  - day_offset: 30
+    category: vocabulary
+    topic_id: time
+    title: "Vocabulario: Tiempo y Fechas"
+  - day_offset: 31
+    category: vocabulary
+    topic_id: body
+    title: "Vocabulario: Partes del Cuerpo"
+  - day_offset: 32
+    category: vocabulary
+    topic_id: greetings
+    title: "Vocabulario: Saludos y Expresiones"
+  - day_offset: 33
+    category: vocabulary
+    topic_id: adjectives_i
+    title: "Vocabulario: Adjetivos-I"
+
+  # ── SEMANA 11-13: GRAMÁTICA ──
+  - day_offset: 34
+    category: grammar
+    topic_id: particles-wa
+    title: "Gramática: Partícula は (wa)"
+  - day_offset: 35
+    category: grammar
+    topic_id: particles-ga
+    title: "Gramática: Partícula が (ga)"
+  - day_offset: 36
+    category: grammar
+    topic_id: particles-o
+    title: "Gramática: Partícula を (o)"
+  - day_offset: 37
+    category: grammar
+    topic_id: particles-ni
+    title: "Gramática: Partícula に (ni)"
+  - day_offset: 38
+    category: grammar
+    topic_id: particles-de
+    title: "Gramática: Partícula で (de)"
+  - day_offset: 39
+    category: grammar
+    topic_id: particles-e
+    title: "Gramática: Partícula へ (e)"
+  - day_offset: 40
+    category: grammar
+    topic_id: particles-to
+    title: "Gramática: Partícula と (to)"
+  - day_offset: 41
+    category: grammar
+    topic_id: particles-no
+    title: "Gramática: Partícula の (no)"
+  - day_offset: 42
+    category: grammar
+    topic_id: particles-mo
+    title: "Gramática: Partícula も (mo)"
+  - day_offset: 43
+    category: grammar
+    topic_id: desu-masu
+    title: "Gramática: Forma Cortés (です・ます)"
+  - day_offset: 44
+    category: grammar
+    topic_id: verb-groups
+    title: "Gramática: Grupos Verbales (Godan/Ichidan/Irregular)"
+  - day_offset: 45
+    category: grammar
+    topic_id: te-form
+    title: "Gramática: Forma て (Te-form)"
+  - day_offset: 46
+    category: grammar
+    topic_id: ta-form
+    title: "Gramática: Forma た (Ta-form / Pasado)"
+  - day_offset: 47
+    category: grammar
+    topic_id: adjectives
+    title: "Gramática: Adjetivos (い vs な)"
+
+  # ── SEMANA 14-16: EXPRESIONES ──
+  - day_offset: 48
+    category: expressions
+    topic_id: basic-greetings
+    title: "Expresiones: Saludos Básicos"
+  - day_offset: 49
+    category: expressions
+    topic_id: politeness
+    title: "Expresiones: Cortesía"
+  - day_offset: 50
+    category: expressions
+    topic_id: restaurant
+    title: "Expresiones: En el Restaurante"
+  - day_offset: 51
+    category: expressions
+    topic_id: shopping
+    title: "Expresiones: Compras"
+  - day_offset: 52
+    category: expressions
+    topic_id: directions
+    title: "Expresiones: Direcciones y Transporte"
+  - day_offset: 53
+    category: expressions
+    topic_id: emergencies
+    title: "Expresiones: Emergencias y Salud"
+  - day_offset: 54
+    category: expressions
+    topic_id: casual
+    title: "Expresiones: Japonés Casual"
+
+  # ── REPASOS ──
+  - day_offset: 55
+    category: review
+    topic_id: hiragana
+    title: "Repaso: Hiragana Completo"
+  - day_offset: 56
+    category: review
+    topic_id: katakana
+    title: "Repaso: Katakana Completo"
+  - day_offset: 57
+    category: review
+    topic_id: kanji-basic
+    title: "Repaso: Kanji Básicos"
+  - day_offset: 58
+    category: review
+    topic_id: vocabulary-core
+    title: "Repaso: Vocabulario Esencial"
+  - day_offset: 59
+    category: review
+    topic_id: grammar-core
+    title: "Repaso: Gramática Fundamental"
+  - day_offset: 60
+    category: review
+    topic_id: expressions-core
+    title: "Repaso: Expresiones Clave"
+
+  # ── SEGUNDO CICLO: VOCABULARIO AVANZADO ──
+  - day_offset: 61
+    category: vocabulary
+    topic_id: colors
+    title: "Vocabulario: Colores (Repaso + Nuevos)"
+  - day_offset: 62
+    category: vocabulary
+    topic_id: animals
+    title: "Vocabulario: Animales (Repaso + Nuevos)"
+  - day_offset: 63
+    category: vocabulary
+    topic_id: food
+    title: "Vocabulario: Comida (Repaso + Nuevos)"

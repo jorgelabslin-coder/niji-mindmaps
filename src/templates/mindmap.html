@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ mmap.title }} — Niji Mindmaps{% endblock %}
+{% block content %}
+<a href="{{ root_path }}index.html" class="back-link">← Volver al inicio</a>
+
+<div class="mindmap-container animate-in">
+<span class="cat-badge cat-{{ mmap.category }}" style="margin-bottom:0.75rem;display:inline-block;">{{ mmap.category }}</span>
+<div class="mm-title">{{ mmap.title }}</div>
+<div class="mm-date">{{ mmap.date }}</div>
+{% if mmap.tags %}<div style="margin-top:0.5rem;">{% for t in mmap.tags %}<span class="tag">{{ t }}</span> {% endfor %}</div>{% endif %}
+<div style="margin-top:1.25rem;">
+<img src="{{ root_path }}mindmaps/{{ mmap.svg_path }}" alt="{{ mmap.title }}" style="max-width:100%;border-radius:8px;">
+</div>
+</div>
+
+{% if mmap.description %}
+<div class="glass-card" style="margin-top:1rem;">
+<p>{{ mmap.description }}</p>
+</div>
+{% endif %}
+
+<div style="text-align:center;margin-top:1.5rem;">
+<a href="{{ root_path }}index.html" class="back-link">← Volver al inicio</a>
+</div>
+{% endblock %}

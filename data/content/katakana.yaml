@@ -1,0 +1,224 @@
+rows:
+  - id: a-row
+    label: "A-row (アイウエオ)"
+    characters:
+      - character: "ア"
+        romaji: "a"
+        mnemonic: "Parece una 'A' sin el trazo del medio"
+        examples: [{ word: "アメリカ", meaning: "América" }, { word: "アニメ", meaning: "anime" }]
+      - character: "イ"
+        romaji: "i"
+        mnemonic: "Dos líneas como el número イチ (ichi)"
+        examples: [{ word: "イギリス", meaning: "Inglaterra" }, { word: "イヌ", meaning: "perro (kanji)" }]
+      - character: "ウ"
+        romaji: "u"
+        mnemonic: "Un techo (yane) en forma de 'u'"
+        examples: [{ word: "ウサギ", meaning: "conejo" }, { word: "ウミ", meaning: "mar" }]
+      - character: "エ"
+        romaji: "e"
+        mnemonic: "Una 'E' cuadrada"
+        examples: [{ word: "エアコン", meaning: "aire acondicionado" }, { word: "エネル...", meaning: "energía" }]
+      - character: "オ"
+        romaji: "o"
+        mnemonic: "Una 'O' con una diagonal"
+        examples: [{ word: "オレンジ", meaning: "naranja" }, { word: "オンセン", meaning: "aguas termales" }]
+
+  - id: ka-row
+    label: "KA-row (カキクケコ)"
+    characters:
+      - character: "カ"
+        romaji: "ka"
+        mnemonic: "Parece el kanji de poder (力)"
+        examples: [{ word: "カメラ", meaning: "cámara" }, { word: "カラオケ", meaning: "karaoke" }]
+      - character: "キ"
+        romaji: "ki"
+        mnemonic: "Una 'K' simplificada"
+        examples: [{ word: "キロ", meaning: "kilo" }, { word: "キムチ", meaning: "kimchi" }]
+      - character: "ク"
+        romaji: "ku"
+        mnemonic: "Un  '<' (menor que)"
+        examples: [{ word: "クラス", meaning: "clase" }, { word: "クリスマス", meaning: "Navidad" }]
+      - character: "ケ"
+        romaji: "ke"
+        mnemonic: "Una 'K' grande y audaz"
+        examples: [{ word: "ケーキ", meaning: "pastel" }, { word: "ケイタイ", meaning: "celular" }]
+      - character: "コ"
+        romaji: "ko"
+        mnemonic: "Dos líneas como boca (kuchi)"
+        examples: [{ word: "コーヒー", meaning: "café" }, { word: "コイン", meaning: "moneda" }]
+
+  - id: sa-row
+    label: "SA-row (サシスセソ)"
+    characters:
+      - character: "サ"
+        romaji: "sa"
+        mnemonic: "Parece una 'S' con una flor"
+        examples: [{ word: "サクラ", meaning: "cerezo" }, { word: "サラダ", meaning: "ensalada" }]
+      - character: "シ"
+        romaji: "shi"
+        mnemonic: "Tres gotas de agua (mizu)"
+        examples: [{ word: "シルク", meaning: "seda" }, { word: "シンゴ", meaning: "nuevo (shingo)" }]
+      - character: "ス"
+        romaji: "su"
+        mnemonic: "Una 'S' alta y delgada"
+        examples: [{ word: "スシ", meaning: "sushi" }, { word: "スポーツ", meaning: "deporte" }]
+      - character: "セ"
+        romaji: "se"
+        mnemonic: "Una 'S' con una línea"
+        examples: [{ word: "セーター", meaning: "suéter" }, { word: "セカイ", meaning: "mundo" }]
+      - character: "ソ"
+        romaji: "so"
+        mnemonic: "Un signo de 'menos' con dirección"
+        examples: [{ word: "ソファ", meaning: "sofá" }, { word: "ソフト", meaning: "soft" }]
+
+  - id: ta-row
+    label: "TA-row (タチツテト)"
+    characters:
+      - character: "タ"
+        romaji: "ta"
+        mnemonic: "Parece un タ (ta) con una línea curva"
+        examples: [{ word: "タクシー", meaning: "taxi" }, { word: "タバコ", meaning: "tabaco" }]
+      - character: "チ"
+        romaji: "chi"
+        mnemonic: "Un número 5 pero es chi"
+        examples: [{ word: "チーズ", meaning: "queso" }, { word: "チャンス", meaning: "oportunidad" }]
+      - character: "ツ"
+        romaji: "tsu"
+        mnemonic: "Olas (nami) del tsunami"
+        examples: [{ word: "ツアー", meaning: "tour" }, { word: "ツリー", meaning: "árbol" }]
+      - character: "テ"
+        romaji: "te"
+        mnemonic: "Una 'T' con un brazo (te)"
+        examples: [{ word: "テーブル", meaning: "mesa" }, { word: "テレビ", meaning: "TV" }]
+      - character: "ト"
+        romaji: "to"
+        mnemonic: "Un pájaro (tori) parado"
+        examples: [{ word: "トイレ", meaning: "baño" }, { word: "トマト", meaning: "tomate" }]
+
+  - id: na-row
+    label: "NA-row (ナニヌネノ)"
+    characters:
+      - character: "ナ"
+        romaji: "na"
+        mnemonic: "Un 十 (10) con un gancho"
+        examples: [{ word: "ナイフ", meaning: "cuchillo" }, { word: "ナマケモノ", meaning: "perezoso" }]
+      - character: "ニ"
+        romaji: "ni"
+        mnemonic: "Dos líneas paralelas (ni = 2)"
+        examples: [{ word: "ニホン", meaning: "Japón" }, { word: "ニュース", meaning: "noticias" }]
+      - character: "ヌ"
+        romaji: "nu"
+        mnemonic: "Un nudo (musubi) en katakana"
+        examples: [{ word: "ヌードル", meaning: "fideos" }]
+      - character: "ネ"
+        romaji: "ne"
+        mnemonic: "Una 'N' con sombrero"
+        examples: [{ word: "ネコ", meaning: "gato" }, { word: "ネクタイ", meaning: "corbata" }]
+      - character: "ノ"
+        romaji: "no"
+        mnemonic: "Una línea diagonal, simple y clara"
+        examples: [{ word: "ノート", meaning: "cuaderno" }, { word: "ノウハウ", meaning: "know-how" }]
+
+  - id: ha-row
+    label: "HA-row (ハヒフヘホ)"
+    characters:
+      - character: "ハ"
+        romaji: "ha"
+        mnemonic: "Dos líneas como alas (hane)"
+        examples: [{ word: "ハイキング", meaning: "senderismo" }, { word: "ハサミ", meaning: "tijeras" }]
+      - character: "ヒ"
+        romaji: "hi"
+        mnemonic: "Una 'H' en ángulo"
+        examples: [{ word: "ヒマワリ", meaning: "girasol" }, { word: "ヒトツ", meaning: "uno" }]
+      - character: "フ"
+        romaji: "fu"
+        mnemonic: "El Monte Fuji (Fuji-san) minimalista"
+        examples: [{ word: "フルーツ", meaning: "fruta" }, { word: "フトン", meaning: "futón" }]
+      - character: "ヘ"
+        romaji: "he"
+        mnemonic: "Una línea inclinada, como un cerro"
+        examples: [{ word: "ヘア", meaning: "cabello" }, { word: "ヘルプ", meaning: "ayuda" }]
+      - character: "ホ"
+        romaji: "ho"
+        mnemonic: "Una 'H' con dos líneas (hoshii)"
+        examples: [{ word: "ホテル", meaning: "hotel" }, { word: "ホーム", meaning: "hogar" }]
+
+  - id: ma-row
+    label: "MA-row (マミムメモ)"
+    characters:
+      - character: "マ"
+        romaji: "ma"
+        mnemonic: "Un マ (ma) como un cubo"
+        examples: [{ word: "マクドナルド", meaning: "McDonald's" }, { word: "マンガ", meaning: "manga" }]
+      - character: "ミ"
+        romaji: "mi"
+        mnemonic: "Tres líneas, como 'mi' en español"
+        examples: [{ word: "ミルク", meaning: "leche" }, { word: "ミカン", meaning: "mandarina" }]
+      - character: "ム"
+        romaji: "mu"
+        mnemonic: "Un pico de montaña (murasaki)"
+        examples: [{ word: "ムシ", meaning: "insecto" }, { word: "ムラサキ", meaning: "púrpura" }]
+      - character: "メ"
+        romaji: "me"
+        mnemonic: "Una 'X' con una línea (me)"
+        examples: [{ word: "メガネ", meaning: "gafas" }, { word: "メール", meaning: "correo" }]
+      - character: "モ"
+        romaji: "mo"
+        mnemonic: "Una 'M' con tres líneas"
+        examples: [{ word: "モノ", meaning: "cosa" }, { word: "モリ", meaning: "bosque" }]
+
+  - id: ya-row
+    label: "YA-row (ヤユヨ)"
+    characters:
+      - character: "ヤ"
+        romaji: "ya"
+        mnemonic: "Una flecha (ya) en katakana"
+        examples: [{ word: "ヤクザ", meaning: "yakuza" }, { word: "ヤサイ", meaning: "verdura" }]
+      - character: "ユ"
+        romaji: "yu"
+        mnemonic: "Un recipiente con borde curvo"
+        examples: [{ word: "ユニーク", meaning: "único" }, { word: "ユメ", meaning: "sueño" }]
+      - character: "ヨ"
+        romaji: "yo"
+        mnemonic: "Tres líneas horizontales (yoko)"
+        examples: [{ word: "ヨット", meaning: "yate" }, { word: "ヨガ", meaning: "yoga" }]
+
+  - id: ra-row
+    label: "RA-row (ラリルレロ)"
+    characters:
+      - character: "ラ"
+        romaji: "ra"
+        mnemonic: "Una 'R' con lágrima (namida)"
+        examples: [{ word: "ラジオ", meaning: "radio" }, { word: "ラーメン", meaning: "ramen" }]
+      - character: "リ"
+        romaji: "ri"
+        mnemonic: "Dos líneas verticales paralelas"
+        examples: [{ word: "リンゴ", meaning: "manzana" }, { word: "リサイクル", meaning: "reciclaje" }]
+      - character: "ル"
+        romaji: "ru"
+        mnemonic: "Un lazo (ribon) de regalo"
+        examples: [{ word: "ルーム", meaning: "habitación" }, { word: "ルール", meaning: "regla" }]
+      - character: "レ"
+        romaji: "re"
+        mnemonic: "Una 'R' con una espina"
+        examples: [{ word: "レストラン", meaning: "restaurante" }, { word: "レベル", meaning: "nivel" }]
+      - character: "ロ"
+        romaji: "ro"
+        mnemonic: "Un cuadrado como boca (kuchi)"
+        examples: [{ word: "ロボット", meaning: "robot" }, { word: "ローマ字", meaning: "romaji" }]
+
+  - id: wa-row
+    label: "WA-row (ワヲン)"
+    characters:
+      - character: "ワ"
+        romaji: "wa"
+        mnemonic: "Una 'W' en katakana simple"
+        examples: [{ word: "ワイン", meaning: "vino" }, { word: "ワールド", meaning: "mundo" }]
+      - character: "ヲ"
+        romaji: "wo"
+        mnemonic: "Un gancho hacia abajo"
+        examples: [{ word: "ヲ (partícula)", meaning: "objeto directo" }]
+      - character: "ン"
+        romaji: "n"
+        mnemonic: "Una 'n' inclinada"
+        examples: [{ word: "サン", meaning: "tres" }, { word: "トン", meaning: "tonelada" }]

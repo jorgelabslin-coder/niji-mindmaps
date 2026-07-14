@@ -1,0 +1,224 @@
+rows:
+  - id: a-row
+    label: "A-row (あいうえお)"
+    characters:
+      - character: "あ"
+        romaji: "a"
+        mnemonic: "Se parece a una 'a' en cursiva"
+        examples: [{ word: "あめ", meaning: "lluvia" }, { word: "あお", meaning: "azul" }]
+      - character: "い"
+        romaji: "i"
+        mnemonic: "Parece dos personas sonriendo"
+        examples: [{ word: "いぬ", meaning: "perro" }, { word: "いえ", meaning: "casa" }]
+      - character: "う"
+        romaji: "u"
+        mnemonic: "Una 'u' en cursiva con sombrero"
+        examples: [{ word: "うみ", meaning: "mar" }, { word: "うた", meaning: "canción" }]
+      - character: "え"
+        romaji: "e"
+        mnemonic: "Parece una 'e' con una línea"
+        examples: [{ word: "えき", meaning: "estación" }, { word: "えん", meaning: "círculo" }]
+      - character: "お"
+        romaji: "o"
+        mnemonic: "Una 'o' con un lazo"
+        examples: [{ word: "おかね", meaning: "dinero" }, { word: "おんな", meaning: "mujer" }]
+
+  - id: ka-row
+    label: "KA-row (かきくけこ)"
+    characters:
+      - character: "か"
+        romaji: "ka"
+        mnemonic: "Parece una 'k' con una espada"
+        examples: [{ word: "かさ", meaning: "paraguas" }, { word: "かみ", meaning: "papel/dios" }]
+      - character: "き"
+        romaji: "ki"
+        mnemonic: "Un árbol (ki) con ramas"
+        examples: [{ word: "き", meaning: "árbol" }, { word: "きせつ", meaning: "estación" }]
+      - character: "く"
+        romaji: "ku"
+        mnemonic: "Un pico de un cuervo (karasu)"
+        examples: [{ word: "くも", meaning: "nube/araña" }, { word: "くるま", meaning: "coche" }]
+      - character: "け"
+        romaji: "ke"
+        mnemonic: "Una 'K' con una ceja"
+        examples: [{ word: "けいさつ", meaning: "policía" }, { word: "けん", meaning: "espada" }]
+      - character: "こ"
+        romaji: "ko"
+        mnemonic: "Dos palillos (kohi)"
+        examples: [{ word: "こども", meaning: "niño" }, { word: "こえ", meaning: "voz" }]
+
+  - id: sa-row
+    label: "SA-row (さしすせそ)"
+    characters:
+      - character: "さ"
+        romaji: "sa"
+        mnemonic: "Parece una persona sentada (suwaru)"
+        examples: [{ word: "さくら", meaning: "cerezo" }, { word: "さかな", meaning: "pescado" }]
+      - character: "し"
+        romaji: "shi"
+        mnemonic: "Un anzuelo (tsuri)"
+        examples: [{ word: "しまうま", meaning: "cebra" }, { word: "しごと", meaning: "trabajo" }]
+      - character: "す"
+        romaji: "su"
+        mnemonic: "Un nido (su) con pajaritos"
+        examples: [{ word: "すし", meaning: "sushi" }, { word: "すうじ", meaning: "número" }]
+      - character: "せ"
+        romaji: "se"
+        mnemonic: "Una 'S' con un traje (sebiro)"
+        examples: [{ word: "せんせい", meaning: "profesor" }, { word: "せかい", meaning: "mundo" }]
+      - character: "そ"
+        romaji: "so"
+        mnemonic: "Una ola con una línea (sora)"
+        examples: [{ word: "そら", meaning: "cielo" }, { word: "そば", meaning: "cerca/fideos" }]
+
+  - id: ta-row
+    label: "TA-row (たちつてと)"
+    characters:
+      - character: "た"
+        romaji: "ta"
+        mnemonic: "Parece una 't' con una serpiente"
+        examples: [{ word: "たまご", meaning: "huevo" }, { word: "たべる", meaning: "comer" }]
+      - character: "ち"
+        romaji: "chi"
+        mnemonic: "Un 5 (go) pero es chi"
+        examples: [{ word: "ちず", meaning: "mapa" }, { word: "ちかい", meaning: "cerca" }]
+      - character: "つ"
+        romaji: "tsu"
+        mnemonic: "Una ola pequeña (tsunami)"
+        examples: [{ word: "つき", meaning: "luna" }, { word: "つくえ", meaning: "escritorio" }]
+      - character: "て"
+        romaji: "te"
+        mnemonic: "Una 't' con una mano (te)"
+        examples: [{ word: "て", meaning: "mano" }, { word: "てんき", meaning: "clima" }]
+      - character: "と"
+        romaji: "to"
+        mnemonic: "Un pájaro (tori) con pico"
+        examples: [{ word: "とり", meaning: "pájaro" }, { word: "とき", meaning: "tiempo" }]
+
+  - id: na-row
+    label: "NA-row (なにぬねの)"
+    characters:
+      - character: "な"
+        romaji: "na"
+        mnemonic: "Un nudo (musubi)"
+        examples: [{ word: "なつ", meaning: "verano" }, { word: "なまえ", meaning: "nombre" }]
+      - character: "に"
+        romaji: "ni"
+        mnemonic: "Una rodilla (hiza) doblada"
+        examples: [{ word: "にほん", meaning: "Japón" }, { word: "にく", meaning: "carne" }]
+      - character: "ぬ"
+        romaji: "nu"
+        mnemonic: "Un nudo (musubi) apretado"
+        examples: [{ word: "ぬま", meaning: "pantano" }, { word: "ぬの", meaning: "tela" }]
+      - character: "ね"
+        romaji: "ne"
+        mnemonic: "Una 'N' con una campana (suzu)"
+        examples: [{ word: "ねこ", meaning: "gato" }, { word: "ねる", meaning: "dormir" }]
+      - character: "の"
+        romaji: "no"
+        mnemonic: "Un signo de 'no'"
+        examples: [{ word: "のはら", meaning: "campo" }, { word: "のみもの", meaning: "bebida" }]
+
+  - id: ha-row
+    label: "HA-row (はひふへほ)"
+    characters:
+      - character: "は"
+        romaji: "ha"
+        mnemonic: "Una 'H' con una sonrisa (hai)"
+        examples: [{ word: "はな", meaning: "flor/nariz" }, { word: "はる", meaning: "primavera" }]
+      - character: "ひ"
+        romaji: "hi"
+        mnemonic: "Una sonrisa (hohoemi)"
+        examples: [{ word: "ひと", meaning: "persona" }, { word: "ひる", meaning: "mediodía" }]
+      - character: "ふ"
+        romaji: "fu"
+        mnemonic: "El monte Fuji (Fuji-san)"
+        examples: [{ word: "ふね", meaning: "barco" }, { word: "ふゆ", meaning: "invierno" }]
+      - character: "へ"
+        romaji: "he"
+        mnemonic: "Un pico de montaña (yama)"
+        examples: [{ word: "へや", meaning: "habitación" }, { word: "へび", meaning: "serpiente" }]
+      - character: "ほ"
+        romaji: "ho"
+        mnemonic: "Una 'H' con dos ramas (hō)"
+        examples: [{ word: "ほし", meaning: "estrella" }, { word: "ほん", meaning: "libro" }]
+
+  - id: ma-row
+    label: "MA-row (まみむめも)"
+    characters:
+      - character: "ま"
+        romaji: "ma"
+        mnemonic: "Una 'M' con una pelota (mari)"
+        examples: [{ word: "まつり", meaning: "festival" }, { word: "まど", meaning: "ventana" }]
+      - character: "み"
+        romaji: "mi"
+        mnemonic: "Una 'm' con un espejo (kagami)"
+        examples: [{ word: "みず", meaning: "agua" }, { word: "みせ", meaning: "tienda" }]
+      - character: "む"
+        romaji: "mu"
+        mnemonic: "Una vaca (ushi) mugiendo"
+        examples: [{ word: "むし", meaning: "insecto" }, { word: "むら", meaning: "pueblo" }]
+      - character: "め"
+        romaji: "me"
+        mnemonic: "Un ojo (me) abierto"
+        examples: [{ word: "め", meaning: "ojo" }, { word: "めがね", meaning: "gafas" }]
+      - character: "も"
+        romaji: "mo"
+        mnemonic: "Dos líneas, 'más' (motto)"
+        examples: [{ word: "もり", meaning: "bosque" }, { word: "もの", meaning: "cosa" }]
+
+  - id: ya-row
+    label: "YA-row (やゆよ)"
+    characters:
+      - character: "や"
+        romaji: "ya"
+        mnemonic: "Una flecha (ya) apuntando"
+        examples: [{ word: "やま", meaning: "montaña" }, { word: "やさい", meaning: "verdura" }]
+      - character: "ゆ"
+        romaji: "yu"
+        mnemonic: "Un 'U' con un yin-yang"
+        examples: [{ word: "ゆき", meaning: "nieve" }, { word: "ゆめ", meaning: "sueño" }]
+      - character: "よ"
+        romaji: "yo"
+        mnemonic: "Una 'Y' con una llave (kagi)"
+        examples: [{ word: "よる", meaning: "noche" }, { word: "よく", meaning: "a menudo" }]
+
+  - id: ra-row
+    label: "RA-row (らりるれろ)"
+    characters:
+      - character: "ら"
+        romaji: "ra"
+        mnemonic: "Un conejo (usagi) sentado"
+        examples: [{ word: "らくだ", meaning: "camello" }, { word: "らいげつ", meaning: "próximo mes" }]
+      - character: "り"
+        romaji: "ri"
+        mnemonic: "Dos palillos (hashi) paralelos"
+        examples: [{ word: "りんご", meaning: "manzana" }, { word: "りょこう", meaning: "viaje" }]
+      - character: "る"
+        romaji: "ru"
+        mnemonic: "Un bucle (rūpu)"
+        examples: [{ word: "るす", meaning: "ausente" }, { word: "るーる", meaning: "regla" }]
+      - character: "れ"
+        romaji: "re"
+        mnemonic: "Una 'R' con una campana (suzu)"
+        examples: [{ word: "れんしゅう", meaning: "práctica" }, { word: "れいぞうこ", meaning: "refrigerador" }]
+      - character: "ろ"
+        romaji: "ro"
+        mnemonic: "Un '3' pero es ro"
+        examples: [{ word: "ろく", meaning: "seis" }, { word: "ろうそく", meaning: "vela" }]
+
+  - id: wa-row
+    label: "WA-row (わをん)"
+    characters:
+      - character: "わ"
+        romaji: "wa"
+        mnemonic: "Un 'wa' como una trampa (wana)"
+        examples: [{ word: "わたし", meaning: "yo" }, { word: "わに", meaning: "cocodrilo" }]
+      - character: "を"
+        romaji: "wo"
+        mnemonic: "Un gancho (wani) en el agua"
+        examples: [{ word: "を (partícula)", meaning: "objeto directo" }]
+      - character: "ん"
+        romaji: "n"
+        mnemonic: "Una 'n' con una ola"
+        examples: [{ word: "てん", meaning: "punto" }, { word: "ほん", meaning: "libro" }]

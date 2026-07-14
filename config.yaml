@@ -1,0 +1,29 @@
+# Niji Mindmaps - Configuración
+
+project:
+  name: "Niji Mindmaps"
+  description: "Mapas mentales diarios para aprender japonés"
+  lang: "es"
+
+storage:
+  output_dir: "docs"
+  data_dir: "data"
+  content_dir: "data/content"
+  anime_dir: "data/anime"
+  schedule_file: "data/schedule.yaml"
+
+ai:
+  # Opcional: API key para generar ejemplos y variaciones con IA
+  # Si no se configura, usa los ejemplos base de los archivos YAML
+  provider: ""  # openai, anthropic, ollama, o vacío para solo contenido curado
+  api_key: ""   # Configurar como variable de entorno: NIJI_API_KEY
+  model: ""     # gpt-4o-mini, claude-3-haiku, etc.
+  
+server:
+  host: "0.0.0.0"
+  port: 8000
+
+site:
+  title: "Niji Mindmaps"
+  description: "Mapas mentales visuales para aprender japonés — un tema nuevo cada día"
+  background_images: "data/anime"
