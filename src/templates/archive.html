@@ -2,18 +2,29 @@
 {% block title %}Archivo — Niji Mindmaps{% endblock %}
 {% block content %}
 <div class="hero" style="padding:2rem 0 1rem;">
-<h1 style="font-size:clamp(1.5rem,3vw,2rem);">Archivo</h1>
-<p>Todos los mapas mentales generados</p>
+  <h1 style="font-size:clamp(1.3rem,3vw,1.8rem);">Archivo</h1>
+  <p>Todos los mapas mentales generados</p>
 </div>
+
+{% if mindmaps %}
+<div class="card-grid animate-in">
+{% for m in mindmaps %}
+<a href="{{ root_path }}mindmap/{{ m.id }}.html" class="zen-card" style="text-decoration:none;">
+  <h3>{{ m.title }}</h3>
+  <div class="meta">{{ m.date }} · <span class="cat-badge cat-{{ m.category }}">{{ m.category }}</span></div>
+</a>
+{% endfor %}
+</div>
+{% endif %}
 
 {% for year, months in archive.items() %}
 <h2 class="date-header">{{ year }}</h2>
 <div class="archive-grid">
 {% for month_key, month_data in months.items() %}
 <a href="{{ root_path }}archive/{{ month_key }}.html" class="archive-card">
-<div class="month-name">{{ month_data.label }}</div>
-<div class="month-count">{{ month_data.count }} mapas</div>
-<div class="month-days">{{ month_data.days }} días</div>
+  <div class="month-name">{{ month_data.label }}</div>
+  <div class="month-count">{{ month_data.count }} mapas</div>
+  <div class="month-days">{{ month_data.days }} días</div>
 </a>
 {% endfor %}
 </div>

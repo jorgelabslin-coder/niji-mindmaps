@@ -2,12 +2,12 @@
 {% block title %}Buscar — Niji Mindmaps{% endblock %}
 {% block content %}
 <div class="hero" style="padding:2rem 0 1rem;">
-<h1 style="font-size:clamp(1.5rem,3vw,2rem);">Buscar</h1>
-<p>Encuentra mapas mentales por tema, categoría o fecha</p>
+  <h1 style="font-size:clamp(1.3rem,3vw,1.8rem);">Buscar</h1>
+  <p>Encuentra mapas mentales por tema, categoría o fecha</p>
 </div>
 
 <div class="search-box">
-<input type="text" id="searchInput" placeholder="Buscar mapas mentales..." oninput="doSearch(this.value)">
+  <input type="text" id="searchInput" placeholder="Buscar mapas mentales..." oninput="doSearch(this.value)">
 </div>
 <div id="results"></div>
 
@@ -36,7 +36,7 @@ el.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:2rem
 return;
 }
 el.innerHTML = '<div class="card-grid">' + results.map(r => `
-<a href="{{ root_path }}mindmap/${r.item.id}.html" class="glass-card" style="text-decoration:none;">
+<a href="{{ root_path }}mindmap/${r.item.id}.html" class="zen-card" style="text-decoration:none;">
 <h3>${r.item.title}</h3>
 <div class="meta">${r.item.date} · <span class="cat-badge cat-${r.item.category}">${r.item.category}</span></div>
 </a>

@@ -1,54 +1,145 @@
 {% extends "base.html" %}
-{% block title %}Niji Mindmaps — {{ today_topic }}{% endblock %}
+{% block title %}Niji Mindmaps — {{ today_topic if today_topic else 'Mapas mentales de japonés' }}{% endblock %}
 {% block content %}
-<div class="hero">
-<h1>Niji Mindmaps</h1>
-<p class="jp-subtitle">脳地図</p>
-<p>Mapas mentales visuales para aprender japonés — un tema nuevo cada día</p>
-<div class="stats" style="margin-top:2rem;">
-<div class="stat"><div class="stat-value">{{ total_maps }}</div><div class="stat-label">Mapas</div></div>
-<div class="stat"><div class="stat-value">{{ total_days }}</div><div class="stat-label">Días</div></div>
-<div class="stat"><div class="stat-value">{{ categories|length }}</div><div class="stat-label">Categorías</div></div>
+{% if total_days %}
+  {% set progress = ((total_days / 60) * 100)|round|int if total_days <= 60 else 100 %}
+{% else %}
+  {% set progress = 0 %}
+{% endif %}
+
+{% if today_map %}
+<div class="journey-card zen-shadow animate-in">
+  <div class="journey-badge">Viaje activo</div>
+  <div class="journey-title">60 días para dominar japonés</div>
+  <div class="journey-desc">Mapas mentales diarios — un tema nuevo cada día</div>
+  <div class="journey-progress">
+    <div class="journey-progress-header">
+      <span class="journey-count">{{ total_days }} <span class="total">/ 60</span></span>
+      <span class="journey-percent">{{ progress }}% Complete</span>
+    </div>
+    <div class="journey-bar">
+      <div class="journey-bar-fill" style="width:{{ progress }}%"></div>
+    </div>
+  </div>
 </div>
+{% else %}
+<div class="journey-card zen-shadow animate-in">
+  <div class="journey-badge">Bienvenido</div>
+  <div class="journey-title">Comienza tu viaje</div>
+  <div class="journey-desc">Mapas mentales visuales para aprender japonés — un tema nuevo cada día</div>
+</div>
+{% endif %}
+
+<div class="stats-grid animate-in animate-in-delay-1">
+  <div class="stat-card zen-shadow">
+    <div>
+      <div class="stat-label">Mapas</div>
+      <div class="stat-value">{{ total_maps }}</div>
+    </div>
+    <div class="stat-icon green">📊</div>
+  </div>
+  <div class="stat-card zen-shadow">
+    <div>
+      <div class="stat-label">Días</div>
+      <div class="stat-value">{{ total_days }}</div>
+    </div>
+    <div class="stat-icon black">📅</div>
+  </div>
+  <div class="stat-card zen-shadow">
+    <div>
+      <div class="stat-label">Categorías</div>
+      <div class="stat-value">{{ categories|length }}</div>
+    </div>
+    <div class="stat-icon green">🎯</div>
+  </div>
 </div>
 
 {% if today_map %}
-<div class="mindmap-container animate-in">
-<div class="mm-title">{{ today_map.title }}</div>
-<div class="mm-date">{{ today_map.date }}</div>
-<span class="cat-badge cat-{{ today_map.category }}">{{ today_map.category }}</span>
-{% if today_map.tags %}<div style="margin-top:0.5rem;">{% for t in today_map.tags %}<span class="tag">{{ t }}</span> {% endfor %}</div>{% endif %}
-<div style="margin-top:1.25rem;">
-<img src="{{ root_path }}mindmaps/{{ today_map.svg_path }}" alt="{{ today_map.title }}" style="max-width:100%;border-radius:8px;">
-</div>
+<div class="mindmap-section animate-in animate-in-delay-2">
+  <div class="mindmap-header">
+    <div>
+      <h2>Mapa del día</h2>
+      <div class="focus">Hoy: <strong>{{ today_map.title }}</strong></div>
+    </div>
+    <span class="cat-badge cat-{{ today_map.category }}">{{ today_map.category }}</span>
+  </div>
+  <div class="mindmap-container zen-shadow">
+    <div class="mm-title">{{ today_map.title }}</div>
+    <div class="mm-date">{{ today_map.date }}</div>
+    {% if today_map.tags %}<div style="margin-bottom:0.75rem;">{% for t in today_map.tags %}<span class="tag">{{ t }}</span> {% endfor %}</div>{% endif %}
+    <img src="{{ root_path }}mindmaps/{{ today_map.svg_path }}" alt="{{ today_map.title }}" style="max-width:100%;border-radius:8px;">
+  </div>
 </div>
 {% else %}
-<div class="mindmap-container">
-<p style="padding:2rem;text-align:center;color:var(--text-muted);">No hay mapa para hoy. Corre <code>python src/main.py --daily</code> para generar.</p>
+<div class="mindmap-container animate-in" style="padding:3rem;text-align:center;">
+  <p style="color:var(--text-muted);">No hay mapa para hoy. Corre <code>python src/main.py --daily</code> para generar.</p>
 </div>
 {% endif %}
 
 {% if recent_maps %}
-<h2 style="margin-top:2rem;">Mapas recientes</h2>
-<div class="card-grid">
-{% for m in recent_maps %}
-<a href="{{ root_path }}mindmap/{{ m.id }}.html" class="glass-card" style="text-decoration:none;">
-<h3>{{ m.title }}</h3>
-<div class="meta">{{ m.date }} · <span class="cat-badge cat-{{ m.category }}">{{ m.category }}</span></div>
-</a>
-{% endfor %}
+<div class="asymmetric-grid animate-in animate-in-delay-3">
+  <div>
+    <div class="mindmap-header">
+      <h2>Repaso recomendado</h2>
+    </div>
+    {% set review_items = recent_maps[:4] %}
+    {% for m in review_items %}
+    <a href="{{ root_path }}mindmap/{{ m.id }}.html" class="review-item">
+      <div class="review-char">{{ m.title[:1] }}</div>
+      <div class="review-info">
+        <div class="word">{{ m.title }}</div>
+        <div class="detail">{{ m.date }} · {{ m.category }}</div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="streak-card">
+    <div>
+      <h3>Racha de aprendizaje</h3>
+      <p>Has completado {{ total_days }} días consecutivos. La práctica constante es la clave del dominio Shibui.</p>
+    </div>
+    <div class="streak-avatars">
+      <div class="streak-dots">
+        {% for i in range(total_days if total_days <= 12 else 12) %}
+        <div class="streak-dot"></div>
+        {% endfor %}
+      </div>
+      <span class="streak-label">+{{ total_days - 12 if total_days > 12 else 0 }} más</span>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if recent_maps %}
+<div class="mindmap-section animate-in animate-in-delay-3">
+  <div class="mindmap-header">
+    <h2>Mapas recientes</h2>
+  </div>
+  <div class="card-grid">
+    {% for m in recent_maps %}
+    <a href="{{ root_path }}mindmap/{{ m.id }}.html" class="zen-card" style="text-decoration:none;">
+      <h3>{{ m.title }}</h3>
+      <div class="meta">{{ m.date }} · <span class="cat-badge cat-{{ m.category }}">{{ m.category }}</span></div>
+    </a>
+    {% endfor %}
+  </div>
 </div>
 {% endif %}
 
 {% if calendar %}
-<h2 style="margin-top:2rem;">Calendario</h2>
-<div class="archive-grid">
-{% for c in calendar %}
-<a href="{{ root_path }}mindmap/{{ c.id }}.html" class="archive-card" style="opacity:{{ '1' if c.has_map else '0.3' }}">
-<div class="month-name">{{ c.date }}</div>
-<div class="month-count">{{ c.title }}</div>
-</a>
-{% endfor %}
+<div class="mindmap-section animate-in animate-in-delay-3">
+  <div class="mindmap-header">
+    <h2>Calendario</h2>
+  </div>
+  <div class="archive-grid">
+    {% for c in calendar %}
+    <a href="{{ root_path }}mindmap/{{ c.id }}.html" class="archive-card">
+      <div class="month-name">{{ c.date }}</div>
+      <div class="month-count">{{ c.title }}</div>
+    </a>
+    {% endfor %}
+  </div>
 </div>
 {% endif %}
 {% endblock %}

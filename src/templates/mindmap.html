@@ -3,23 +3,27 @@
 {% block content %}
 <a href="{{ root_path }}index.html" class="back-link">← Volver al inicio</a>
 
-<div class="mindmap-container animate-in">
-<span class="cat-badge cat-{{ mmap.category }}" style="margin-bottom:0.75rem;display:inline-block;">{{ mmap.category }}</span>
-<div class="mm-title">{{ mmap.title }}</div>
-<div class="mm-date">{{ mmap.date }}</div>
-{% if mmap.tags %}<div style="margin-top:0.5rem;">{% for t in mmap.tags %}<span class="tag">{{ t }}</span> {% endfor %}</div>{% endif %}
-<div style="margin-top:1.25rem;">
-<img src="{{ root_path }}mindmaps/{{ mmap.svg_path }}" alt="{{ mmap.title }}" style="max-width:100%;border-radius:8px;">
-</div>
+<div class="mindmap-container zen-shadow animate-in" style="margin-top:1rem;">
+  <span class="cat-badge cat-{{ mmap.category }}" style="margin-bottom:0.5rem;display:inline-block;">{{ mmap.category }}</span>
+  <div class="mm-title">{{ mmap.title }}</div>
+  <div class="mm-date">{{ mmap.date }}</div>
+  {% if mmap.tags %}<div style="margin-top:0.5rem;">{% for t in mmap.tags %}<span class="tag">{{ t }}</span> {% endfor %}</div>{% endif %}
+  <div style="margin-top:1.25rem;">
+    <img src="{{ root_path }}mindmaps/{{ mmap.svg_path }}" alt="{{ mmap.title }}" style="max-width:100%;border-radius:8px;">
+  </div>
+  <div style="margin-top:1rem;display:flex;gap:0.75rem;justify-content:center;">
+    <a href="{{ root_path }}mindmaps/{{ mmap.svg_path }}" download class="download-btn">↓ SVG</a>
+    <a href="{{ root_path }}mindmaps/{{ mmap.png_path }}" download class="download-btn">↓ PNG</a>
+  </div>
 </div>
 
 {% if mmap.description %}
-<div class="glass-card" style="margin-top:1rem;">
-<p>{{ mmap.description }}</p>
+<div class="zen-card zen-shadow" style="margin-top:1rem;">
+  <p style="margin:0;font-size:0.9rem;">{{ mmap.description }}</p>
 </div>
 {% endif %}
 
 <div style="text-align:center;margin-top:1.5rem;">
-<a href="{{ root_path }}index.html" class="back-link">← Volver al inicio</a>
+  <a href="{{ root_path }}index.html" class="back-link">← Volver al inicio</a>
 </div>
 {% endblock %}

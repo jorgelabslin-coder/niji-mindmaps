@@ -98,12 +98,14 @@ def daily(config):
 
     generate(category, title, topic_data, svg_path)
 
+    png_filename = f"{map_id}.png"
     mindmap_entry = {
         "id": map_id,
         "title": title,
         "category": category,
         "date": date_str,
         "svg_path": svg_filename,
+        "png_path": png_filename,
         "description": f"Mapa mental diario: {title}",
         "tags": [category, topic_id],
     }

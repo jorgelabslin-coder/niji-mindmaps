@@ -10,16 +10,51 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🍜</text></svg>">
 </head>
 <body>
-<div class="container">
-<div class="nav">
-<a href="{{ root_path }}index.html" class="nav-brand">Niji</a>
-<a href="{{ root_path }}index.html">Hoy</a>
-<a href="{{ root_path }}archive.html">Archivo</a>
-<a href="{{ root_path }}search.html">Buscar</a>
+<div class="layout">
+
+<aside class="sidebar">
+  <div class="sidebar-brand">Niji</div>
+  {% if today_map %}
+  <div class="sidebar-user">
+    <div class="sidebar-user-day">Día {{ total_days }} de 60</div>
+    <div class="sidebar-user-topic">{{ today_map.category }}: {{ today_map.title }}</div>
+  </div>
+  {% endif %}
+  <nav class="sidebar-nav">
+    <a href="{{ root_path }}index.html" class="{% if active_page == 'home' %}active{% endif %}">
+      <span class="nav-icon">🧠</span> Mapa del día
+    </a>
+    <a href="{{ root_path }}archive.html" class="{% if active_page == 'archive' %}active{% endif %}">
+      <span class="nav-icon">📚</span> Biblioteca
+    </a>
+    <a href="{{ root_path }}search.html" class="{% if active_page == 'search' %}active{% endif %}">
+      <span class="nav-icon">🔍</span> Buscar
+    </a>
+  </nav>
+  <div class="sidebar-cta">
+    <a href="{{ root_path }}index.html">Mapa diario →</a>
+  </div>
+  <div class="sidebar-footer">
+    <a href="{{ root_path }}index.html">⚙️ Ajustes</a>
+    <a href="#">❓ Ayuda</a>
+  </div>
+</aside>
+
+<div class="layout-main">
+
+<div class="topbar">
+  <a href="{{ root_path }}index.html" class="topbar-brand">Niji</a>
+  <a href="{{ root_path }}index.html">Hoy</a>
+  <a href="{{ root_path }}archive.html">Archivo</a>
+  <a href="{{ root_path }}search.html">Buscar</a>
 </div>
+
+<div class="container">
 {% block content %}{% endblock %}
 <div class="footer">
-<span class="footer-brand">Niji Mindmaps</span> · Mapas mentales para aprender japonés · <a href="{{ root_path }}index.html">Inicio</a>
+  <span>Niji Mindmaps</span> · Mapas mentales para aprender japonés · <a href="{{ root_path }}index.html">Inicio</a>
+</div>
+</div>
 </div>
 </div>
 <script src="{{ css_path }}app.js"></script>

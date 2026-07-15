@@ -28,16 +28,22 @@ class SiteBuilder:
         recent = sorted(mindmaps, key=lambda x: x.get("date", ""), reverse=True)[:12]
 
         total_categories = set(m.get("category", "review") for m in mindmaps)
+        total_days = len(set(m.get("date", "") for m in mindmaps))
 
-        self._render("index.html", output_dir / "index.html", {
+        base_ctx = {
             "today_map": today_map,
-            "recent_maps": recent,
             "total_maps": len(mindmaps),
-            "total_days": len(set(m.get("date", "") for m in mindmaps)),
-            "categories": list(total_categories),
-            "calendar": mindmaps[-30:],
+            "total_days": total_days,
             "root_path": "",
             "css_path": "assets/",
+        }
+
+        self._render("index.html", output_dir / "index.html", {
+            **base_ctx,
+            "active_page": "home",
+            "recent_maps": recent,
+            "categories": list(total_categories),
+            "calendar": mindmaps[-30:],
         })
 
         for mm in mindmaps:
@@ -45,15 +51,20 @@ class SiteBuilder:
             mm_dir.mkdir(exist_ok=True)
 
             self._render("mindmap.html", mm_dir / f"{mm['id']}.html", {
+                **base_ctx,
                 "mmap": mm,
                 "root_path": "../",
                 "css_path": "../assets/",
             })
 
-        self._generate_archive(output_dir, mindmaps)
+        self._generate_archive(output_dir, mindmaps, base_ctx)
         self._generate_search_index(output_dir, mindmaps)
+        self._render("search.html", output_dir / "search.html", {
+            **base_ctx,
+            "active_page": "search",
+        })
 
-    def _generate_archive(self, output_dir, mindmaps):
+    def _generate_archive(self, output_dir, mindmaps, base_ctx):
         dates = sorted(set(m.get("date", "") for m in mindmaps if m.get("date")), reverse=True)
         years = defaultdict(lambda: defaultdict(lambda: {"label": "", "count": 0, "days": 0}))
 
@@ -68,15 +79,17 @@ class SiteBuilder:
             ))
 
         self._render("archive.html", output_dir / "archive.html", {
+            **base_ctx,
+            "active_page": "archive",
             "archive": dict(years),
-            "root_path": "",
-            "css_path": "assets/",
         })
 
         for year, months in years.items():
             for month_key, month_data in months.items():
                 month_maps = [m for m in mindmaps if m.get("date", "").startswith(month_key)]
                 self._render("archive.html", output_dir / "archive" / f"{month_key}.html", {
+                    **base_ctx,
+                    "active_page": "archive",
                     "archive": {year: {month_key: month_data}},
                     "mindmaps": month_maps,
                     "root_path": "../",
@@ -94,6 +107,7 @@ class SiteBuilder:
                 "date": m.get("date", ""),
                 "tags": m.get("tags", []),
                 "svg_path": m.get("svg_path", ""),
+                "png_path": m.get("png_path", ""),
             })
         with open(output_dir / "mindmaps" / "index.json", "w", encoding="utf-8") as f:
             json.dump(index, f, ensure_ascii=False)
@@ -124,40 +138,9 @@ class SiteBuilder:
                 f.write(css)
 
         js = """(function(){
-var s = document.querySelector('script[src$="app.js"]');
-var base = s ? s.src.substring(0, s.src.lastIndexOf('/')) + '/' : '';
-var bgDir = base + 'anime/';
-
-function setBg() {
-  var exts = ['jpg','jpeg','png','webp','svg'];
-  var pool = [];
-  for (var i = 1; i <= 30; i++) {
-    var num = ('0' + i).slice(-2);
-    exts.forEach(function(ext) { pool.push(bgDir + 'bg-' + num + '.' + ext); });
-  }
-  var pick = pool[Math.floor(Math.random() * pool.length)];
-  var img = new Image();
-  img.onload = function() { document.body.style.backgroundImage = 'url(' + pick + ')'; };
-  img.src = pick;
-}
-setBg();
-
 document.addEventListener('DOMContentLoaded', function() {
-  var cards = document.querySelectorAll('.glass-card');
-  if ('IntersectionObserver' in window) {
-    var obs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = 'running';
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    cards.forEach(function(c) { c.style.animationPlayState = 'paused'; obs.observe(c); });
-  }
-
   var cur = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav a:not(.nav-brand)').forEach(function(a) {
+  document.querySelectorAll('.topbar a:not(.topbar-brand)').forEach(function(a) {
     if (a.getAttribute('href') === cur) a.classList.add('active');
   });
 });
